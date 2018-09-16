@@ -13,6 +13,10 @@
 		1EC20AD6214E70F1000BB2F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC20AD5214E70F1000BB2F8 /* Assets.xcassets */; };
 		1EC20AD9214E70F1000BB2F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC20AD7214E70F1000BB2F8 /* LaunchScreen.storyboard */; };
 		1EC20AE4214E70F1000BB2F8 /* ReduxSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC20AE3214E70F1000BB2F8 /* ReduxSampleTests.swift */; };
+		1EC20AFC214E9084000BB2F8 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC20AF8214E9083000BB2F8 /* RxBlocking.framework */; };
+		1EC20AFD214E9084000BB2F8 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC20AF9214E9084000BB2F8 /* ReSwift.framework */; };
+		1EC20AFE214E9084000BB2F8 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC20AFA214E9084000BB2F8 /* RxCocoa.framework */; };
+		1EC20AFF214E9084000BB2F8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC20AFB214E9084000BB2F8 /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,14 @@
 		1EC20ADF214E70F1000BB2F8 /* ReduxSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReduxSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC20AE3214E70F1000BB2F8 /* ReduxSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxSampleTests.swift; sourceTree = "<group>"; };
 		1EC20AE5214E70F1000BB2F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EC20AF0214E8FFC000BB2F8 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = ../Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
+		1EC20AF1214E8FFC000BB2F8 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		1EC20AF2214E8FFC000BB2F8 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = ../Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		1EC20AF3214E8FFC000BB2F8 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = ../Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		1EC20AF8214E9083000BB2F8 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		1EC20AF9214E9084000BB2F8 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
+		1EC20AFA214E9084000BB2F8 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		1EC20AFB214E9084000BB2F8 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EC20AFC214E9084000BB2F8 /* RxBlocking.framework in Frameworks */,
+				1EC20AFD214E9084000BB2F8 /* ReSwift.framework in Frameworks */,
+				1EC20AFE214E9084000BB2F8 /* RxCocoa.framework in Frameworks */,
+				1EC20AFF214E9084000BB2F8 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +78,7 @@
 				1EC20ACD214E70F0000BB2F8 /* ReduxSample */,
 				1EC20AE2214E70F1000BB2F8 /* ReduxSampleTests */,
 				1EC20ACC214E70F0000BB2F8 /* Products */,
+				1EC20AEF214E8FFC000BB2F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +113,21 @@
 			path = ReduxSampleTests;
 			sourceTree = "<group>";
 		};
+		1EC20AEF214E8FFC000BB2F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EC20AF9214E9084000BB2F8 /* ReSwift.framework */,
+				1EC20AF8214E9083000BB2F8 /* RxBlocking.framework */,
+				1EC20AFA214E9084000BB2F8 /* RxCocoa.framework */,
+				1EC20AFB214E9084000BB2F8 /* RxSwift.framework */,
+				1EC20AF0214E8FFC000BB2F8 /* ReSwift.framework */,
+				1EC20AF2214E8FFC000BB2F8 /* RxBlocking.framework */,
+				1EC20AF3214E8FFC000BB2F8 /* RxCocoa.framework */,
+				1EC20AF1214E8FFC000BB2F8 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +138,7 @@
 				1EC20AC7214E70F0000BB2F8 /* Sources */,
 				1EC20AC8214E70F0000BB2F8 /* Frameworks */,
 				1EC20AC9214E70F0000BB2F8 /* Resources */,
+				1EC20AEE214E8F0C000BB2F8 /* Run Script(Carthage) */,
 			);
 			buildRules = (
 			);
@@ -191,6 +224,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EC20AEE214E8F0C000BB2F8 /* Run Script(Carthage) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			name = "Run Script(Carthage)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1EC20AC7214E70F0000BB2F8 /* Sources */ = {
@@ -362,7 +420,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y827F3LXSQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReduxSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,7 +443,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y827F3LXSQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReduxSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
