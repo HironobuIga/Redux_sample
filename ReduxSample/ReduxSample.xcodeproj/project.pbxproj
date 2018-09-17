@@ -17,6 +17,9 @@
 		1EC20AFD214E9084000BB2F8 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC20AF9214E9084000BB2F8 /* ReSwift.framework */; };
 		1EC20AFE214E9084000BB2F8 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC20AFA214E9084000BB2F8 /* RxCocoa.framework */; };
 		1EC20AFF214E9084000BB2F8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC20AFB214E9084000BB2F8 /* RxSwift.framework */; };
+		1EC20B04214F94CE000BB2F8 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC20B03214F94CE000BB2F8 /* AppState.swift */; };
+		1EC20B06214F950A000BB2F8 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC20B05214F950A000BB2F8 /* Actions.swift */; };
+		1EC20B08214F9547000BB2F8 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC20B07214F9547000BB2F8 /* CounterReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		1EC20AF9214E9084000BB2F8 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
 		1EC20AFA214E9084000BB2F8 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		1EC20AFB214E9084000BB2F8 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		1EC20B03214F94CE000BB2F8 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		1EC20B05214F950A000BB2F8 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		1EC20B07214F9547000BB2F8 /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,9 @@
 		1EC20ACD214E70F0000BB2F8 /* ReduxSample */ = {
 			isa = PBXGroup;
 			children = (
+				1EC20B02214F9468000BB2F8 /* Actions */,
+				1EC20B01214F9465000BB2F8 /* Reducers */,
+				1EC20B00214F9463000BB2F8 /* State */,
 				1EC20ACE214E70F0000BB2F8 /* AppDelegate.swift */,
 				1EC20AD0214E70F0000BB2F8 /* ViewController.swift */,
 				1EC20AD2214E70F0000BB2F8 /* Main.storyboard */,
@@ -126,6 +135,30 @@
 				1EC20AF1214E8FFC000BB2F8 /* RxSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1EC20B00214F9463000BB2F8 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				1EC20B03214F94CE000BB2F8 /* AppState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		1EC20B01214F9465000BB2F8 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				1EC20B07214F9547000BB2F8 /* CounterReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		1EC20B02214F9468000BB2F8 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				1EC20B05214F950A000BB2F8 /* Actions.swift */,
+			);
+			path = Actions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EC20B04214F94CE000BB2F8 /* AppState.swift in Sources */,
+				1EC20B08214F9547000BB2F8 /* CounterReducer.swift in Sources */,
+				1EC20B06214F950A000BB2F8 /* Actions.swift in Sources */,
 				1EC20AD1214E70F0000BB2F8 /* ViewController.swift in Sources */,
 				1EC20ACF214E70F0000BB2F8 /* AppDelegate.swift in Sources */,
 			);

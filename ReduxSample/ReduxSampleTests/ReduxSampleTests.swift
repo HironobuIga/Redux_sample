@@ -2,7 +2,7 @@
 //  ReduxSampleTests.swift
 //  ReduxSampleTests
 //
-//  Created by 伊賀裕展 on 2018/09/16.
+//  Created by HironobuIga on 2018/09/16.
 //  Copyright © 2018年 iganin. All rights reserved.
 //
 
