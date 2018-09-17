@@ -20,6 +20,7 @@
 		1EC20B04214F94CE000BB2F8 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC20B03214F94CE000BB2F8 /* AppState.swift */; };
 		1EC20B06214F950A000BB2F8 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC20B05214F950A000BB2F8 /* Actions.swift */; };
 		1EC20B08214F9547000BB2F8 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC20B07214F9547000BB2F8 /* CounterReducer.swift */; };
+		1EC20B0A214FBBDA000BB2F8 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 1EC20B09214FBBDA000BB2F8 /* Cartfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		1EC20B03214F94CE000BB2F8 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		1EC20B05214F950A000BB2F8 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 		1EC20B07214F9547000BB2F8 /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
+		1EC20B09214FBBDA000BB2F8 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		1EC20AC2214E70F0000BB2F8 = {
 			isa = PBXGroup;
 			children = (
+				1EC20B09214FBBDA000BB2F8 /* Cartfile */,
 				1EC20ACD214E70F0000BB2F8 /* ReduxSample */,
 				1EC20AE2214E70F1000BB2F8 /* ReduxSampleTests */,
 				1EC20ACC214E70F0000BB2F8 /* Products */,
@@ -245,6 +248,7 @@
 			files = (
 				1EC20AD9214E70F1000BB2F8 /* LaunchScreen.storyboard in Resources */,
 				1EC20AD6214E70F1000BB2F8 /* Assets.xcassets in Resources */,
+				1EC20B0A214FBBDA000BB2F8 /* Cartfile in Resources */,
 				1EC20AD4214E70F0000BB2F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
