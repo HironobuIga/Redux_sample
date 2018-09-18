@@ -10,5 +10,10 @@ import Foundation
 import ReSwift
 
 struct AppState: StateType {
-    var counter: Int = 0
+    var countState: CounterState
+}
+
+struct CounterState: StateType {
+    var count: Int = 0
+    var imageUrlString = ""
 }

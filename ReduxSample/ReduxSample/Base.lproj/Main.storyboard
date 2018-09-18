@@ -69,6 +69,9 @@
                                     <constraint firstItem="VcK-ld-RM6" firstAttribute="width" secondItem="1Oo-zL-q6W" secondAttribute="width" id="hCk-Je-mgz"/>
                                 </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l5w-vD-D3Q">
+                                <rect key="frame" x="10" y="44" width="394" height="352.33333333333331"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -76,12 +79,17 @@
                             <constraint firstItem="uAy-27-R7D" firstAttribute="top" secondItem="Jpz-Gx-hX6" secondAttribute="bottom" constant="100" id="AV5-A1-x7a"/>
                             <constraint firstItem="Jpz-Gx-hX6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Cxd-25-jMq"/>
                             <constraint firstItem="Jpz-Gx-hX6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WH8-ok-OG4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l5w-vD-D3Q" secondAttribute="trailing" constant="10" id="XMb-e1-2Ye"/>
                             <constraint firstItem="uAy-27-R7D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZIe-Ay-ufN"/>
+                            <constraint firstItem="l5w-vD-D3Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="cjp-JX-ygT"/>
+                            <constraint firstItem="l5w-vD-D3Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jss-JX-8Mu"/>
+                            <constraint firstItem="Jpz-Gx-hX6" firstAttribute="top" secondItem="l5w-vD-D3Q" secondAttribute="bottom" constant="10" id="xik-5o-XjE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="counterLabel" destination="Jpz-Gx-hX6" id="CUq-2U-qng"/>
+                        <outlet property="imageView" destination="l5w-vD-D3Q" id="GTE-AR-1GZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -18,9 +18,10 @@
 		1EC20AFE214E9084000BB2F8 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC20AFA214E9084000BB2F8 /* RxCocoa.framework */; };
 		1EC20AFF214E9084000BB2F8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC20AFB214E9084000BB2F8 /* RxSwift.framework */; };
 		1EC20B04214F94CE000BB2F8 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC20B03214F94CE000BB2F8 /* AppState.swift */; };
-		1EC20B06214F950A000BB2F8 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC20B05214F950A000BB2F8 /* Actions.swift */; };
+		1EC20B06214F950A000BB2F8 /* CounterActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC20B05214F950A000BB2F8 /* CounterActions.swift */; };
 		1EC20B08214F9547000BB2F8 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC20B07214F9547000BB2F8 /* CounterReducer.swift */; };
 		1EC20B0A214FBBDA000BB2F8 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 1EC20B09214FBBDA000BB2F8 /* Cartfile */; };
+		1EFD515621514C160059F220 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD515521514C160059F220 /* AppReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +54,10 @@
 		1EC20AFA214E9084000BB2F8 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		1EC20AFB214E9084000BB2F8 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		1EC20B03214F94CE000BB2F8 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
-		1EC20B05214F950A000BB2F8 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		1EC20B05214F950A000BB2F8 /* CounterActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterActions.swift; sourceTree = "<group>"; };
 		1EC20B07214F9547000BB2F8 /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
 		1EC20B09214FBBDA000BB2F8 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		1EFD515521514C160059F220 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				1EC20B07214F9547000BB2F8 /* CounterReducer.swift */,
+				1EFD515521514C160059F220 /* AppReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -159,7 +162,7 @@
 		1EC20B02214F9468000BB2F8 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
-				1EC20B05214F950A000BB2F8 /* Actions.swift */,
+				1EC20B05214F950A000BB2F8 /* CounterActions.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -292,9 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EFD515621514C160059F220 /* AppReducer.swift in Sources */,
 				1EC20B04214F94CE000BB2F8 /* AppState.swift in Sources */,
 				1EC20B08214F9547000BB2F8 /* CounterReducer.swift in Sources */,
-				1EC20B06214F950A000BB2F8 /* Actions.swift in Sources */,
+				1EC20B06214F950A000BB2F8 /* CounterActions.swift in Sources */,
 				1EC20AD1214E70F0000BB2F8 /* ViewController.swift in Sources */,
 				1EC20ACF214E70F0000BB2F8 /* AppDelegate.swift in Sources */,
 			);

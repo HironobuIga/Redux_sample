@@ -9,5 +9,9 @@
 import Foundation
 import ReSwift
 
-struct CounterActionIncrease: Action {}
-struct CounterActionDecrease: Action {}
+extension CounterState {
+    enum Action: ReSwift.Action {
+        case CounterActionIncrease
+        case CounterActionDecrease
+    }
+}

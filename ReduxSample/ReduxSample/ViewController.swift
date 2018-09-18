@@ -14,13 +14,16 @@ final class ViewController: UIViewController, StoreSubscriber {
     
     // MARK: - IBOutlet
     @IBOutlet private weak var counterLabel: UILabel!
-
+    @IBOutlet private weak var imageView: UIImageView!
+    
     @IBAction private func plusButtonDidTapped(_ sender: UIButton) {
-        mainStore.dispatch(CounterActionIncrease())
+        let action = CounterState.Action.CounterActionIncrease
+        mainStore.dispatch(action)
     }
     
     @IBAction private func minusButtonDidTapped(_ sender: UIButton) {
-        mainStore.dispatch(CounterActionDecrease())
+        let action = CounterState.Action.CounterActionDecrease
+        mainStore.dispatch(action)
     }
     
     // MARK: - Life Cycle
@@ -32,7 +35,7 @@ final class ViewController: UIViewController, StoreSubscriber {
     
     // MARK: - Method
     func newState(state: AppState) {
-        counterLabel.text = "\(mainStore.state.counter)"
+        counterLabel.text = "\(mainStore.state.countState.count)"
     }
 }
 
