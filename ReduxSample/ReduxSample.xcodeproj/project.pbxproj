@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,7 +22,6 @@
 		1EC20B08214F9547000BB2F8 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC20B07214F9547000BB2F8 /* CounterReducer.swift */; };
 		1EC20B0A214FBBDA000BB2F8 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 1EC20B09214FBBDA000BB2F8 /* Cartfile */; };
 		1EFD515621514C160059F220 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD515521514C160059F220 /* AppReducer.swift */; };
-		1EFDC9192152A47600D7A197 /* CartfileTargets.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 1EFDC9182152A46C00D7A197 /* CartfileTargets.xcfilelist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +58,6 @@
 		1EC20B07214F9547000BB2F8 /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
 		1EC20B09214FBBDA000BB2F8 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		1EFD515521514C160059F220 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
-		1EFDC9182152A46C00D7A197 /* CartfileTargets.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = CartfileTargets.xcfilelist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +110,6 @@
 				1EC20B00214F9463000BB2F8 /* State */,
 				1EC20ACE214E70F0000BB2F8 /* AppDelegate.swift */,
 				1EC20AD0214E70F0000BB2F8 /* ViewController.swift */,
-				1EFDC9182152A46C00D7A197 /* CartfileTargets.xcfilelist */,
 				1EC20AD2214E70F0000BB2F8 /* Main.storyboard */,
 				1EC20AD5214E70F1000BB2F8 /* Assets.xcassets */,
 				1EC20AD7214E70F1000BB2F8 /* LaunchScreen.storyboard */,
@@ -252,7 +249,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EFDC9192152A47600D7A197 /* CartfileTargets.xcfilelist in Resources */,
 				1EC20AD9214E70F1000BB2F8 /* LaunchScreen.storyboard in Resources */,
 				1EC20AD6214E70F1000BB2F8 /* Assets.xcassets in Resources */,
 				1EC20B0A214FBBDA000BB2F8 /* Cartfile in Resources */,
@@ -276,9 +272,12 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"$(SRCROOT)/ReduxSample/CartfileTargets.xcfilelist",
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 			);
 			name = "Run Script(Carthage)";
 			outputFileListPaths = (
