@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E64073E217B758000BBB324 /* Carthage.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = Carthage.xcfilelist; sourceTree = "<group>"; };
 		1EC20ACB214E70F0000BB2F8 /* ReduxSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC20ACE214E70F0000BB2F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EC20AD0214E70F0000BB2F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,15 +106,13 @@
 		1EC20ACD214E70F0000BB2F8 /* ReduxSample */ = {
 			isa = PBXGroup;
 			children = (
+				1EC20ACE214E70F0000BB2F8 /* AppDelegate.swift */,
+				1EC20B00214F9463000BB2F8 /* State */,
 				1EC20B02214F9468000BB2F8 /* Actions */,
 				1EC20B01214F9465000BB2F8 /* Reducers */,
-				1EC20B00214F9463000BB2F8 /* State */,
-				1EC20ACE214E70F0000BB2F8 /* AppDelegate.swift */,
-				1EC20AD0214E70F0000BB2F8 /* ViewController.swift */,
-				1EC20AD2214E70F0000BB2F8 /* Main.storyboard */,
-				1EC20AD5214E70F1000BB2F8 /* Assets.xcassets */,
-				1EC20AD7214E70F1000BB2F8 /* LaunchScreen.storyboard */,
-				1EC20ADA214E70F1000BB2F8 /* Info.plist */,
+				1ED7F3C6217B48690044DEC4 /* Screens */,
+				1ED7F3C7217B487C0044DEC4 /* Support */,
+				1ED7F3C8217B488E0044DEC4 /* Resources */,
 			);
 			path = ReduxSample;
 			sourceTree = "<group>";
@@ -167,6 +166,33 @@
 			path = Actions;
 			sourceTree = "<group>";
 		};
+		1ED7F3C6217B48690044DEC4 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1EC20AD2214E70F0000BB2F8 /* Main.storyboard */,
+				1EC20AD0214E70F0000BB2F8 /* ViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		1ED7F3C7217B487C0044DEC4 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				1EC20ADA214E70F1000BB2F8 /* Info.plist */,
+				1E64073E217B758000BBB324 /* Carthage.xcfilelist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		1ED7F3C8217B488E0044DEC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1EC20AD7214E70F1000BB2F8 /* LaunchScreen.storyboard */,
+				1EC20AD5214E70F1000BB2F8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EC20AE8214E70F1000BB2F8 /* Build configuration list for PBXNativeTarget "ReduxSample" */;
 			buildPhases = (
+				1ED7F3C9217B4B200044DEC4 /* Run Script(create Carthage_xcfilelist) */,
 				1EC20AC7214E70F0000BB2F8 /* Sources */,
 				1EC20AC8214E70F0000BB2F8 /* Frameworks */,
 				1EC20AC9214E70F0000BB2F8 /* Resources */,
@@ -272,12 +299,9 @@
 			files = (
 			);
 			inputFileListPaths = (
+				"$(SRCROOT)/ReduxSample/Support/Carthage.xcfilelist",
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/ReSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 			);
 			name = "Run Script(Carthage)";
 			outputFileListPaths = (
@@ -287,6 +311,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		1ED7F3C9217B4B200044DEC4 /* Run Script(create Carthage_xcfilelist) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/ReduxSample/Support/Carthage.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "Run Script(create Carthage_xcfilelist)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ls ${SRCROOT}/Carthage/Build/iOS | grep -e .framework$ > ${SRCROOT}/ReduxSample/Support/Carthage.xcfilelist\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -468,7 +511,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = ReduxSample/Info.plist;
+				INFOPLIST_FILE = ReduxSample/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -491,7 +534,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = ReduxSample/Info.plist;
+				INFOPLIST_FILE = ReduxSample/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
