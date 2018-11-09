@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E9F5A802195D6020015021A /* PrivateCarthageInput.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 1E9F5A7E2195D6020015021A /* PrivateCarthageInput.xcfilelist */; };
+		1E9F5A812195D6020015021A /* PrivateCarthageOutput.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 1E9F5A7F2195D6020015021A /* PrivateCarthageOutput.xcfilelist */; };
+		1E9F5A832195DBED0015021A /* RxBlocking.framework in Resources */ = {isa = PBXBuildFile; fileRef = 1E9F5A822195DBED0015021A /* RxBlocking.framework */; };
+		1E9F5A852195DBFA0015021A /* RxTest.framework in Resources */ = {isa = PBXBuildFile; fileRef = 1E9F5A842195DBFA0015021A /* RxTest.framework */; };
 		1EC20ACF214E70F0000BB2F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC20ACE214E70F0000BB2F8 /* AppDelegate.swift */; };
 		1EC20AD1214E70F0000BB2F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC20AD0214E70F0000BB2F8 /* ViewController.swift */; };
 		1EC20AD4214E70F0000BB2F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC20AD2214E70F0000BB2F8 /* Main.storyboard */; };
 		1EC20AD6214E70F1000BB2F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC20AD5214E70F1000BB2F8 /* Assets.xcassets */; };
 		1EC20AD9214E70F1000BB2F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC20AD7214E70F1000BB2F8 /* LaunchScreen.storyboard */; };
 		1EC20AE4214E70F1000BB2F8 /* ReduxSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC20AE3214E70F1000BB2F8 /* ReduxSampleTests.swift */; };
-		1EC20AFC214E9084000BB2F8 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC20AF8214E9083000BB2F8 /* RxBlocking.framework */; };
 		1EC20AFD214E9084000BB2F8 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC20AF9214E9084000BB2F8 /* ReSwift.framework */; };
 		1EC20AFE214E9084000BB2F8 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC20AFA214E9084000BB2F8 /* RxCocoa.framework */; };
 		1EC20AFF214E9084000BB2F8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC20AFB214E9084000BB2F8 /* RxSwift.framework */; };
@@ -38,6 +41,10 @@
 		1E64073F217C641E00BBB324 /* CarthageInput.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = CarthageInput.xcfilelist; sourceTree = "<group>"; };
 		1E640740217C642D00BBB324 /* CarthageOutput.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = CarthageOutput.xcfilelist; sourceTree = "<group>"; };
 		1E640744217C6E6400BBB324 /* making_carthage_filelist.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = making_carthage_filelist.sh; sourceTree = "<group>"; };
+		1E9F5A7E2195D6020015021A /* PrivateCarthageInput.xcfilelist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcfilelist; path = PrivateCarthageInput.xcfilelist; sourceTree = "<group>"; };
+		1E9F5A7F2195D6020015021A /* PrivateCarthageOutput.xcfilelist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcfilelist; path = PrivateCarthageOutput.xcfilelist; sourceTree = "<group>"; };
+		1E9F5A822195DBED0015021A /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		1E9F5A842195DBFA0015021A /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		1EC20ACB214E70F0000BB2F8 /* ReduxSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC20ACE214E70F0000BB2F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EC20AD0214E70F0000BB2F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +71,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EC20AFC214E9084000BB2F8 /* RxBlocking.framework in Frameworks */,
 				1EC20AFD214E9084000BB2F8 /* ReSwift.framework in Frameworks */,
 				1EC20AFE214E9084000BB2F8 /* RxCocoa.framework in Frameworks */,
 				1EC20AFF214E9084000BB2F8 /* RxSwift.framework in Frameworks */,
@@ -92,6 +98,8 @@
 		1EC20AC2214E70F0000BB2F8 = {
 			isa = PBXGroup;
 			children = (
+				1E9F5A842195DBFA0015021A /* RxTest.framework */,
+				1E9F5A822195DBED0015021A /* RxBlocking.framework */,
 				1EC20B09214FBBDA000BB2F8 /* Cartfile */,
 				1EC20ACD214E70F0000BB2F8 /* ReduxSample */,
 				1EC20AE2214E70F1000BB2F8 /* ReduxSampleTests */,
@@ -184,6 +192,8 @@
 				1EC20ADA214E70F1000BB2F8 /* Info.plist */,
 				1E64073F217C641E00BBB324 /* CarthageInput.xcfilelist */,
 				1E640740217C642D00BBB324 /* CarthageOutput.xcfilelist */,
+				1E9F5A7E2195D6020015021A /* PrivateCarthageInput.xcfilelist */,
+				1E9F5A7F2195D6020015021A /* PrivateCarthageOutput.xcfilelist */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -204,7 +214,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EC20AE8214E70F1000BB2F8 /* Build configuration list for PBXNativeTarget "ReduxSample" */;
 			buildPhases = (
-				1ED7F3C9217B4B200044DEC4 /* Run Script(create Carthage_xcfilelist) */,
 				1EC20AC7214E70F0000BB2F8 /* Sources */,
 				1EC20AC8214E70F0000BB2F8 /* Frameworks */,
 				1EC20AC9214E70F0000BB2F8 /* Resources */,
@@ -226,6 +235,7 @@
 				1EC20ADB214E70F1000BB2F8 /* Sources */,
 				1EC20ADC214E70F1000BB2F8 /* Frameworks */,
 				1EC20ADD214E70F1000BB2F8 /* Resources */,
+				1E9F5A862195DC810015021A /* Run Script(Carthage) */,
 			);
 			buildRules = (
 			);
@@ -280,9 +290,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E9F5A802195D6020015021A /* PrivateCarthageInput.xcfilelist in Resources */,
 				1EC20AD9214E70F1000BB2F8 /* LaunchScreen.storyboard in Resources */,
 				1EC20AD6214E70F1000BB2F8 /* Assets.xcassets in Resources */,
 				1EC20B0A214FBBDA000BB2F8 /* Cartfile in Resources */,
+				1E9F5A812195D6020015021A /* PrivateCarthageOutput.xcfilelist in Resources */,
 				1EC20AD4214E70F0000BB2F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,12 +303,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E9F5A852195DBFA0015021A /* RxTest.framework in Resources */,
+				1E9F5A832195DBED0015021A /* RxBlocking.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1E9F5A862195DC810015021A /* Run Script(Carthage) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/ReduxSample/Support/PrivateCarthageInput.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "Run Script(Carthage)";
+			outputFileListPaths = (
+				"$(SRCROOT)/ReduxSample/Support/PrivateCarthageOutput.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 		1EC20AEE214E8F0C000BB2F8 /* Run Script(Carthage) */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -316,26 +350,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-		1ED7F3C9217B4B200044DEC4 /* Run Script(create Carthage_xcfilelist) */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"",
-			);
-			inputPaths = (
-			);
-			name = "Run Script(create Carthage_xcfilelist)";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "
-";
 		};
 /* End PBXShellScriptBuildPhase section */
 
