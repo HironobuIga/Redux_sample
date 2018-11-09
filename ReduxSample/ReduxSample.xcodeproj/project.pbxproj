@@ -35,7 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E64073E217B758000BBB324 /* Carthage.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = Carthage.xcfilelist; sourceTree = "<group>"; };
+		1E64073F217C641E00BBB324 /* CarthageInput.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = CarthageInput.xcfilelist; sourceTree = "<group>"; };
+		1E640740217C642D00BBB324 /* CarthageOutput.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = CarthageOutput.xcfilelist; sourceTree = "<group>"; };
+		1E640744217C6E6400BBB324 /* making_carthage_filelist.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = making_carthage_filelist.sh; sourceTree = "<group>"; };
 		1EC20ACB214E70F0000BB2F8 /* ReduxSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC20ACE214E70F0000BB2F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EC20AD0214E70F0000BB2F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,10 +48,6 @@
 		1EC20ADF214E70F1000BB2F8 /* ReduxSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReduxSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC20AE3214E70F1000BB2F8 /* ReduxSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxSampleTests.swift; sourceTree = "<group>"; };
 		1EC20AE5214E70F1000BB2F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1EC20AF0214E8FFC000BB2F8 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = ../Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
-		1EC20AF1214E8FFC000BB2F8 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
-		1EC20AF2214E8FFC000BB2F8 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = ../Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
-		1EC20AF3214E8FFC000BB2F8 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = ../Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		1EC20AF8214E9083000BB2F8 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		1EC20AF9214E9084000BB2F8 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
 		1EC20AFA214E9084000BB2F8 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
@@ -83,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E640743217C6E4500BBB324 /* Script */ = {
+			isa = PBXGroup;
+			children = (
+				1E640744217C6E6400BBB324 /* making_carthage_filelist.sh */,
+			);
+			path = Script;
+			sourceTree = "<group>";
+		};
 		1EC20AC2214E70F0000BB2F8 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +118,7 @@
 				1EC20B01214F9465000BB2F8 /* Reducers */,
 				1ED7F3C6217B48690044DEC4 /* Screens */,
 				1ED7F3C7217B487C0044DEC4 /* Support */,
+				1E640743217C6E4500BBB324 /* Script */,
 				1ED7F3C8217B488E0044DEC4 /* Resources */,
 			);
 			path = ReduxSample;
@@ -133,10 +140,6 @@
 				1EC20AF8214E9083000BB2F8 /* RxBlocking.framework */,
 				1EC20AFA214E9084000BB2F8 /* RxCocoa.framework */,
 				1EC20AFB214E9084000BB2F8 /* RxSwift.framework */,
-				1EC20AF0214E8FFC000BB2F8 /* ReSwift.framework */,
-				1EC20AF2214E8FFC000BB2F8 /* RxBlocking.framework */,
-				1EC20AF3214E8FFC000BB2F8 /* RxCocoa.framework */,
-				1EC20AF1214E8FFC000BB2F8 /* RxSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -179,7 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				1EC20ADA214E70F1000BB2F8 /* Info.plist */,
-				1E64073E217B758000BBB324 /* Carthage.xcfilelist */,
+				1E64073F217C641E00BBB324 /* CarthageInput.xcfilelist */,
+				1E640740217C642D00BBB324 /* CarthageOutput.xcfilelist */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -299,7 +303,7 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"$(SRCROOT)/ReduxSample/Support/Carthage.xcfilelist",
+				"$(SRCROOT)/ReduxSample/Support/CarthageInput.xcfilelist",
 			);
 			inputPaths = (
 			);
@@ -307,6 +311,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(SRCROOT)/ReduxSample/Support/CarthageOutput.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -318,7 +323,7 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"$(SRCROOT)/ReduxSample/Support/Carthage.xcfilelist",
+				"",
 			);
 			inputPaths = (
 			);
@@ -329,7 +334,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "ls ${SRCROOT}/Carthage/Build/iOS | grep -e .framework$ > ${SRCROOT}/ReduxSample/Support/Carthage.xcfilelist\n";
+			shellScript = "
+";
 		};
 /* End PBXShellScriptBuildPhase section */
 
